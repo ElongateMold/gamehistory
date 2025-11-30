@@ -9,7 +9,7 @@ import FormularioJuego from './components/FormularioJuego';
 import TarjetaHoras from './components/TarjetaHoras';
 import ThemeSwitcher from './components/ThemeSwitcher';
 
-const API_URL = 'http://localhost:8000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 // Objeto plantilla actualizado
 const JUEGO_VACIO: Juego = {
